@@ -4,7 +4,7 @@ const userContainer = document.getElementById("info")
 
 btn.addEventListener('click', function(){
     const request = new XMLHttpRequest();
-    request.open('GET', 'http://localhost:'+counter+'3000');
+    request.open('GET', 'https://tytomyr.github.io/JSON/users.'+counter+'json');
     request.onload = function() {
     const data = JSON.parse(request.responseText);
     render(data);
